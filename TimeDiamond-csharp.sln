@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{A2A4F11D-20BA-A15C-0BEE-F7E812C9DB18}") = "TimeDiamond", "Assembly-CSharp-firstpass-vs.csproj", "{1ACD7CE6-EB4A-BD77-C4B6-09275920525D}"
 EndProject
+Project("{A2A4F11D-20BA-A15C-0BEE-F7E812C9DB18}") = "TimeDiamond", "Assembly-CSharp-vs.csproj", "{8B27E4A0-05D3-2AB9-5BE5-31941212BFD2}"
+EndProject
 Project("{A2A4F11D-20BA-A15C-0BEE-F7E812C9DB18}") = "TimeDiamond", "Assembly-CSharp-Editor-vs.csproj", "{C989D883-67C0-93DE-5D48-DF50D5FB8874}"
 EndProject
 Global
@@ -15,6 +17,10 @@ Global
 		{1ACD7CE6-EB4A-BD77-C4B6-09275920525D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1ACD7CE6-EB4A-BD77-C4B6-09275920525D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1ACD7CE6-EB4A-BD77-C4B6-09275920525D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B27E4A0-05D3-2AB9-5BE5-31941212BFD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B27E4A0-05D3-2AB9-5BE5-31941212BFD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B27E4A0-05D3-2AB9-5BE5-31941212BFD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B27E4A0-05D3-2AB9-5BE5-31941212BFD2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C989D883-67C0-93DE-5D48-DF50D5FB8874}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C989D883-67C0-93DE-5D48-DF50D5FB8874}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C989D883-67C0-93DE-5D48-DF50D5FB8874}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -23,7 +29,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-									GlobalSection(MonoDevelopProperties) = preSolution
+															GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

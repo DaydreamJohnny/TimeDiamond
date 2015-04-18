@@ -46,16 +46,20 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Plugin\2D Follow Path\FollowPath\BezierPath.cs" />
-     <Compile Include="Assets\Plugin\2D Follow Path\FollowPath\FollowPath.cs" />
-     <Compile Include="Assets\Plugin\2D Follow Path\FollowPath\NodeBehaviour.cs" />
-     <Compile Include="Assets\Plugin\2D Follow Path\FollowPath\TargetWalker.cs" />
+     <Compile Include="Assets\Scripts\Damaging.cs" />
+     <Compile Include="Assets\Scripts\Health.cs" />
+     <Compile Include="Assets\Scripts\Styleable.cs" />
+     <Compile Include="Assets\Scripts\Upgradable.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{1ACD7CE6-EB4A-BD77-C4B6-09275920525D}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
