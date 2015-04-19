@@ -46,15 +46,18 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Damaging.cs" />
-     <Compile Include="Assets\Scripts\Health.cs" />
-     <Compile Include="Assets\Scripts\Shooter.cs" />
-     <Compile Include="Assets\Scripts\Shot.cs" />
-     <Compile Include="Assets\Scripts\Slower.cs" />
-     <Compile Include="Assets\Scripts\Spawner.cs" />
-     <Compile Include="Assets\Scripts\Upgradable.cs" />
-     <Compile Include="Assets\Scripts\Upgrader.cs" />
-     <Compile Include="Assets\Scripts\Warner.cs" />
+     <Compile Include="Assets\Scripts\Entities\Cost.cs" />
+     <Compile Include="Assets\Scripts\Entities\Damaging.cs" />
+     <Compile Include="Assets\Scripts\Entities\Direction.cs" />
+     <Compile Include="Assets\Scripts\Entities\Health.cs" />
+     <Compile Include="Assets\Scripts\Entities\Shooter.cs" />
+     <Compile Include="Assets\Scripts\Entities\Shot.cs" />
+     <Compile Include="Assets\Scripts\Entities\Slowing.cs" />
+     <Compile Include="Assets\Scripts\Entities\Spawner.cs" />
+     <Compile Include="Assets\Scripts\Entities\UpgradeHUD.cs" />
+     <Compile Include="Assets\Scripts\Entities\UpgradePlatform.cs" />
+     <Compile Include="Assets\Scripts\Entities\Warning.cs" />
+     <Compile Include="Assets\Scripts\Player\ResourcePool.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

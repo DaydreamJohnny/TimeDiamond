@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Slower : MonoBehaviour {
+public class Slowing : MonoBehaviour {
 	// Properties
 	private Collider2D _collider;
 	new public Collider2D collider {

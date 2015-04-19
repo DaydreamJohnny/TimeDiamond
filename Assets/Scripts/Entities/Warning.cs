@@ -2,7 +2,7 @@
 using System.Collections;
 
 [RequireComponent(typeof(Collider2D))]
-public class Warner : MonoBehaviour {
+public class Warning : MonoBehaviour {
 	// Properties
 	private Collider2D _collider;
 	new public Collider2D collider {
