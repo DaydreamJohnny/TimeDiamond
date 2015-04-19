@@ -7,6 +7,7 @@ public class UpgradeHUD : MonoBehaviour {
 
 	// Responders
 	public void OnButtonPress(GameObject upgradePrefab) {
+		Debug.Log(upgradePrefab.tag);
 		UpgradePlatform upgradable = upgradableObject.GetComponent<UpgradePlatform>();
 		upgradable.Upgrade(upgradePrefab);
 	}

@@ -18,7 +18,9 @@ public class Spawner : MonoBehaviour {
 
 	// Spawners
 	void Spawn() {
-		Vector2 position = gameObject.transform.position;
+		Vector3 position = gameObject.transform.position;
+		position.z = -2;
+
 		GameObject spawnedObject = Instantiate(entityPrefab, position, Quaternion.identity) as GameObject;
 		spawnedObject.GetComponent<TargetWalker>().m_pathController = followPath;
 

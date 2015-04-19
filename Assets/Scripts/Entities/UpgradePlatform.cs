@@ -11,6 +11,8 @@ public class UpgradePlatform : MonoBehaviour {
 	public GameObject entityForUpgrade; // Upgradeable GameObjects have a child GameObject which is used for the upgrade
 	public GameObject defaultEntityUpgradePrefab;
 
+	public GameObject playerObject;
+
 	private Animator _animator;
 	public Animator animator {
 		get {
@@ -31,6 +33,11 @@ public class UpgradePlatform : MonoBehaviour {
 		entityForUpgrade = upgradedObject;
 		
 		Destroy(currentUpgradeCanvasObject);
+
+		Debug.Log(entityForUpgrade.tag);
+		if (entityForUpgrade.tag == "TowerNone") {
+			animator.SetTrigger("ClosePlatform");
+		}
 	}
 
 	// Responders
@@ -62,6 +69,12 @@ public class UpgradePlatform : MonoBehaviour {
 			
 			Destroy(entityForUpgrade);
 			entityForUpgrade = upgradedObject;
+
+			Cost cost = entityForUpgrade.GetComponent<Cost>();
+			ResourcePool resourcePool = playerObject.GetComponent<ResourcePool>();
+			if (cost && resourcePool) {
+				resourcePool.UseResources(cost.cost);
+			}
 		}
 	}
 }
