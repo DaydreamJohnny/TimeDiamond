@@ -5,7 +5,7 @@ public class TargetWalker : MonoBehaviour
 {
 	
 	public float m_speed = 5.0f;
-	[HideInInspector] public float td_speedMod = 0.0f;
+	[HideInInspector] public float td_speedCoef = 1.0f;
 	
 	public FollowPath m_pathController;
 	
@@ -98,7 +98,7 @@ public class TargetWalker : MonoBehaviour
 			if(m_list == null || m_list.Count == 0)
 				return;
 			
-			m_time = Mathf.Clamp01( Time.deltaTime * Mathf.Max(m_speed + td_speedMod, 0) / m_currentDistance + m_time);
+			m_time = Mathf.Clamp01( Time.deltaTime * Mathf.Max(m_speed * td_speedCoef, 0) / m_currentDistance + m_time);
 
 			if(m_time == 1)
 			{

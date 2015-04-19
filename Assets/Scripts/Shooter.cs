@@ -17,7 +17,7 @@ public class Shooter : MonoBehaviour {
 
 	private GameObject targetObject;
 
-	public int fireRate = 1;
+	public float fireRate = 1;
 	private float nextFireTime = 0;
 
 	public GameObject shotPrefab;

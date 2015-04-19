@@ -14,20 +14,20 @@ public class Slower : MonoBehaviour {
 		}
 	}
 
-	public float speedDelta = -2.0f;
+	public float speedCoefficient = 0.40f;
 
 	// Collisions
 	void OnTriggerEnter2D(Collider2D coll) {
 		TargetWalker targetWalker = coll.gameObject.GetComponent<TargetWalker>();
 		if (targetWalker) {
-			targetWalker.td_speedMod += speedDelta;
+			targetWalker.td_speedCoef *= speedCoefficient;
 		}
 	}
 
 	void OnTriggerExit2D(Collider2D coll) {
 		TargetWalker targetWalker = coll.gameObject.GetComponent<TargetWalker>();
 		if (targetWalker) {
-			targetWalker.td_speedMod -= speedDelta;
+			targetWalker.td_speedCoef /= speedCoefficient;
 		}
 	}
 }
