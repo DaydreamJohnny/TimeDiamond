@@ -7,12 +7,14 @@ public class Upgrader : MonoBehaviour {
 
 	// Responders
 	public void OnButtonPress(GameObject upgradePrefab) {
-		Debug.Log("Upgrade");
-		upgradableObject.GetComponent<Upgradable>().FinishMouseDown();
-	}
+		Upgradable upgradable = upgradableObject.GetComponent<Upgradable>();
 
-	public void OnButtonPress() {
-		Debug.Log("Turn off");
-		upgradableObject.GetComponent<Upgradable>().FinishMouseDown();
+		GameObject upgradedObject = Instantiate(upgradePrefab, upgradable.entityForUpgrade.transform.position, Quaternion.identity) as GameObject;
+		upgradedObject.transform.parent = upgradedObject.transform;
+
+		Destroy(upgradable.entityForUpgrade);
+		upgradable.entityForUpgrade = upgradedObject;
+
+		upgradable.FinishMouseDown();
 	}
 }

@@ -4,17 +4,6 @@ using System.Collections;
 [RequireComponent(typeof(Collider2D))]
 public class Damaging : MonoBehaviour {
 	// Properties
-	private Collider2D _collider;
-	public Collider2D collider {
-		get {
-			if (!_collider) {
-				_collider = gameObject.GetComponent<Collider2D>();
-			}
-
-			return _collider;
-		}
-	}
-
 	public int damage = 0;
 
 	// Collisions

@@ -20,6 +20,8 @@ public class Health : MonoBehaviour {
 
 	// Mutators
 	public void TakeDamage(int damage) {
+		Debug.Log ("DAMAGE");
+
 		_health -= damage;
 		_health = Mathf.Max(0, _health);
 

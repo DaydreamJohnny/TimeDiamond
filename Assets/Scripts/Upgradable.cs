@@ -6,6 +6,8 @@ public class Upgradable : MonoBehaviour {
 	// Properties
 	public GameObject upgradeCanvasPrefab;
 	[HideInInspector] public GameObject currentUpgradeCanvasObject;
+	
+	public GameObject entityForUpgrade; // Upgradeable GameObjects have a child GameObject which is used for the upgrade
 
 	// Responders
 	void OnMouseDown() {
