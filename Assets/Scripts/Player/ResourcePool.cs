@@ -3,13 +3,14 @@ using System.Collections;
 
 public class ResourcePool : MonoBehaviour {
 	// Properties
+	public int initialResources = 1;
 	public int totalResources {get; private set;}
 	public int availableResources {get; private set;}
 
 	// Lifecycle
 	void Awake() {
-		totalResources = 0;
-		availableResources = 0;
+		totalResources = initialResources;
+		availableResources = totalResources;
 	}
 
 	// Mutators

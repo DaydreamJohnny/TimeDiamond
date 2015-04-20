@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\CameraControl.cs" />
      <Compile Include="Assets\Scripts\Entities\AreaOfEffect.cs" />
      <Compile Include="Assets\Scripts\Entities\Cost.cs" />
      <Compile Include="Assets\Scripts\Entities\Damaging.cs" />

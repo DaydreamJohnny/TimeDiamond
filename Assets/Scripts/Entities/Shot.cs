@@ -23,6 +23,6 @@ public class Shot : MonoBehaviour {
 			health.TakeDamage(damage);
 		}
 
-		Destroy(gameObject, 0.25f);
+		Destroy(gameObject);
 	}
 }
